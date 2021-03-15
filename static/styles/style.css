@@ -12,7 +12,9 @@ margin: 0px 35px;
 body {
     margin: 0;
 }
-
+.navbar {
+    color: transparent;
+}
 .fullImg {
     overflow: hidden;
     width: 100%;
