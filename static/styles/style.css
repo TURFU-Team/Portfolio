@@ -9,14 +9,22 @@
     margin-left: 45px;
 }
 .navbar-nav {
-margin: 0 auto;
+    margin: 0 auto;
 }
 .navbar-nav a {
-margin: 0px 35px;
-<<<<<<< Updated upstream
-=======
-color: #009AA3 !important;
->>>>>>> Stashed changes
+    margin: 0px 35px;
+    color: #009AA3 !important;
+}
+.btn{
+    background: black;
+    border-radius: 30px;
+    color: white;
+    padding: 7px;
+    margin-left: 250px;
+
+}
+.navbar-nav a:hover {
+text-decoration: underline;
 }
 
 body {
@@ -29,17 +37,11 @@ body {
     overflow: hidden;
     width: 100%;
     height: 100vh;
-<<<<<<< Updated upstream
-    background-image: url(/static/img/Fond-Mobile.jpg);
-=======
     background-image: url(../img/bg.png);
->>>>>>> Stashed changes
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-<<<<<<< Updated upstream
-=======
 footer {
     background: #004f73;
     display: flex;
@@ -53,6 +55,15 @@ footer {
 .imgf {
     height: 100px;
 }
+.txtindex {
+    margin-top: 10%;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
 .mentions {
     display: flex;
     justify-content: center;
@@ -65,22 +76,13 @@ footer {
 .reseaux {
     width: 25px;
 }
-.navbar-nav a:hover {
-text-decoration: underline;
-}
->>>>>>> Stashed changes
 
 /* For Desktop */
 @media only screen and (min-width: 980) {
-    .container {
-    }
+
 }
 @media only screen and (min-width: 768px) {
     .fullImg {
-<<<<<<< Updated upstream
-        background-image: url(/static/img/Fond-Desktop.jpg);
-=======
         background-image: url(../img/bg.png);
->>>>>>> Stashed changes
     }
 }
