@@ -1,4 +1,3 @@
- Joey
 .logo {
     height: 80px;
     margin-left: 45px;
@@ -8,6 +7,7 @@ margin: 0 auto;
 }
 .navbar-nav a {
 margin: 0px 35px;
+}
 
 body {
     margin: 0;
