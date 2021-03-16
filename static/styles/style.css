@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
 .logo {
     height: 80px;
     margin-left: 45px;
@@ -22,22 +16,13 @@
           transform: translateY(0px);
       }
   }
+  .navList{
+      color:rgb(62,179,185)
+  }
 
-.navbar-nav {
-    margin: 0 auto;
-}
-.navbar-nav a {
-    margin: 0px 35px;
-    color: #009AA3 !important;
-}
-.btn{
-    background: black;
-    border-radius: 30px;
-    color: white;
-    padding: 7px;
-    margin-left: 250px;
 
-}
+
+
 .navbar-nav a:hover {
 text-decoration: underline;
 }
@@ -45,9 +30,7 @@ text-decoration: underline;
 body {
     margin: 0;
 }
-.navbar {
-    color: transparent;
-}
+
 .fullImg {
  
     width: 100%;
