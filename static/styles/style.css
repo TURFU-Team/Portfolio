@@ -78,9 +78,6 @@ h2 {
 }
 
 /* For Desktop */
-@media only screen and (min-width: 980) {
-
-}
 @media only screen and (min-width: 768px) {
     .fullImg {
         background-image: url(../img/bg.png);
