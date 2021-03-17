@@ -1,8 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+body{
+  line-height: 1;
+  list-style-type: none;
 }
+
+/******************NAVBAR*************/
 
 .logo {
     height: 80px;
@@ -27,59 +28,183 @@
 text-decoration: underline;
 }
 
-body {
-    margin: 0;
-}
 .navbar {
     color: transparent;
 }
+
+/******************BACKGROUND*************/
+
 .fullImg {
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-footer {
-    background: #004f73;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 350px;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.8rem;
-}
-.imgf {
-    height: 100px;
-}
+
+/******************TEXTE INDEX*************/
+
 .txtindex {
-    margin-top: 10%;
+  margin-top: 7%;
 }
-h1 {
-    font-size: 3rem;
+.txtindex h1 {
+  font-size: 2.5rem;
+  font-family: "montserrat", "sans-serif";
 }
-h2 {
-    font-size: 2.5rem;
+.txtindex h2 {
+  font-size: 2rem;
+  font-family: "montserrat", "sans-serif";
+  
 }
-.mentions {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+/***********************CAROUSEL*********************/
+.titre2 {
+  position: absolute;
+  top: 7%;
+  color: grey;
+  font-family: "Montserrat", "sans-serif";
 }
-.mentions li {
-    padding: 20px;
-    text-decoration: underline;
-}
-.reseaux {
-    width: 25px;
+.part2 {
+  background: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  margin: 5% 0 2% 0;
+  position: relative;
 }
 
-/* For Desktop */
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.slide1 {
+  background:url(../img/Carousel/Projet1.jpg) center/cover;
+  
+}
+.slide2 {
+  background:url(../img/Carousel/Projet2.jpg) center/cover;
+  
+}
+.slide3 {
+  background:url(../img/Carousel/Projet3.jpg) center/cover;
+  
+}
+.slide4 {
+  background:url(../img/Carousel/Projet4.jpg) center/cover;
+  
+}
+.slide5 {
+  background:url(../img/Carousel/Projet5.jpg) center/cover;
+}
+.cardhover {
+  color: white;
+  background: #000;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+}
+.cardhovertxt {
+  padding-top: 25%;
+}
+.cardhover:hover{
+  opacity: 1;
+}
+/***************************BLOC ROLES*********************************/
+.descriptif h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.bloc {
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-bottom: 50px;
+  color: #004F73;
+  font-family: "montserrat", "sans-serif";
+  font-size: 0.8rem;
+}
+.bloc p {
+  margin: 0;
+}
+.bloc h3 {
+  color: #009AA3;
+  font-size: 1rem;
+}
+/*********************FOOTER*********/
+footer {
+  background: #004f73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+}
+
+.imgf {
+  height: 100px;
+}
+.mentions {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.mentions li {
+  padding: 20px;
+  text-decoration: underline;
+  color: white;
+}
+.reseaux {
+  width: 25px;
+}
+
+/***********RESPONSIVE**************/
+@media only screen and (max-width: 1000px) {
+  .txtindex h1, .txtindex h2 {
+    font-size: 2rem;
+  }
+  .bloc{
+    line-height: 15px;
+    margin-left: 75px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+  }
+}
 @media only screen and (min-width: 768px) {
-    .fullImg {
-        background-image: url(../img/bg.png);
-    }
+  .fullImg {
+    background-image: url(../img/bg.png);
+  }
+}
+@media only screen and (max-width: 645px) {
+  .txtindex h1, .txtindex h2 {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .txtindex {
+    margin: 30px 0;
+  }
+  .bloc{
+    line-height: 30px;
+    line-height: 15px;
+    margin-left: 50px;
+    margin-right: 75px;
+    margin-bottom: 25px;
+  }
 }
