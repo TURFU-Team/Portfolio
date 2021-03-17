@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
+
 </head>
 
 <body>
@@ -21,31 +21,31 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img class="logo" src="./static/img/logoo.png" alt="Logo"></a>
                 <button class="navbar-toggler animate__animated animate__shakeY" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold navList">
                         <li class="navList px-2">
-                            <a style="color:rgb(62,179,185) ;" class="nav-link navList"  href="#">Développeur Web</a>
+                            <a style="color:rgb(62,179,185) ;" class="nav-link navList" href="#">Développeur Web</a>
                         </li>
                         <li class="nav-item px-2">
                             <a style="color:rgb(62,179,185) ;" class="nav-link" href="#">Designer Web</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a style="color:rgb(62,179,185) ;" class="nav-link "  href="#">Chef de Projet </a>
+                            <a style="color:rgb(62,179,185) ;" class="nav-link " href="#">Chef de Projet </a>
                         </li>
                         <li class="nav-item px-2">
-                            <a style="color:rgb(62,179,185) ;" class="nav-link "  href="#">Graphiste</a>
+                            <a style="color:rgb(62,179,185) ;" class="nav-link " href="#">Graphiste</a>
                         </li>
-    
-    
-    
+
+
+
                     </ul>
                     <form class="d-flex">
-    
-                        <button class="btn btn-outline-dark fw-bold navList" type="submit">Mode Sombre</button>
+
+                        <button class="btn btn-outline-dark fw-bold navList" type="submit" onclick="myFunction()">Mode Sombre</button>
                     </form>
                 </div>
             </div>
@@ -61,58 +61,57 @@
             <h2>Ici vous pourrez découvrir les projets des<br>étudiants de chacune de nos promotions<br>digitales</h2>
         </div>
     </div>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
     <!------------------------------------------FOOTER---------------------------------------------------------->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="container py-5">
+            <div class="row ">
+                <div class="col-sm-12 col-md-4 col-lg-4 partLogo">
                     <div class="logof">
                         <img class="imgf" src="./static/img/logoblanc.png" alt="">
                         <p>Campus du lac, tous droits réservés, 2021</p>
-                        
-                       
-
+                        <p><a href="#">Legal Notice</a> - <a href="#">Privacy Policy</a> - <a href="#">FAQ</a></p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-2">
+                <div class="col-sm-12 col-md-4 col-lg-3 partGauche">
                     <div class="rg">
-                        <p><strong>Campus du Lac - Rive Gauche</strong></p>
+                        <p><strong>Campus du Lac <br> Rive Gauche</strong></p>
                         <li>10 Rue Rene Cassin</li>
                         <li>CS 31996</li>
                         <li>33071 Bordeaux Cedex</li>
                         <li>Téléphone: 05 56 79 52 00</li>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-2">
+                <div class="col-sm-12 col-md-4 col-lg-3 partDroite">
                     <div class="rd">
-                        <p><strong>Campus du Lac - Rive Droite</strong></p>
+                        <p><strong>Campus du Lac <br> Rive Droite</strong></p>
                         <li>7 bis Rue Max Linder</li>
                         <li>BP 194</li>
                         <li>33504 Libourne Cedex</li>
                         <li>Téléphone: 05 56 79 52 00</li>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-2">
+                <div class="col-sm-12 col-md-4 col-lg-4 partVide">  
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 partContact">
                     <div class="contact">
                         <p><strong>Contact</strong></p>
                         <p>campus@formation-lac.com</p>
                         <div class="social">
-                            <a href="https://www.facebook.com/campusdulac"><img class="reseaux"
+                            <a id="facebook" target="_blank" href="https://www.facebook.com/campusdulac"><img class="reseaux"
                                     src="./static/img/Logo-facebook.png" alt=""></a>
-                            <a href="https://www.instagram.com/campusdulac/"><img class="reseaux"
+                            <a id="instagram" target="_blank" href="https://www.instagram.com/campusdulac/"><img class="reseaux"
                                     src="./static/img/insta.png" alt=""></a>
-                            <a href="https://www.linkedin.com/school/campusdulac/"><img class="reseaux"
+                            <a id="linkedin" target="_blank" href="https://www.linkedin.com/school/campusdulac/"><img class="reseaux"
                                     src="./static/img/Logo-Li,kedin.png" alt=""></a>
-                            <a href="https://twitter.com/Campusdulac"><img class="reseaux"
+                            <a id="twitter" target="_blank" href="https://twitter.com/Campusdulac"><img class="reseaux"
                                     src="./static/img/Logo-Twitter.png" alt=""></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="mentions">
-                <li>Mentions Légales</li>
-                <li>Politique de confidentialité</li>
-                <li>RGPD</li>
             </div>
         </div>
     </footer>
