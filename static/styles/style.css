@@ -86,23 +86,23 @@ nav {
   overflow: hidden;
 }
 .slide1 {
-  background: url(../img/Carousel/Projet1.jpg) center/cover;
+  background: url(../img/Carousel/montagne.PNG) center/cover;
 }
 .slide2 {
-  background: url(../img/Carousel/Projet2.jpg) center/cover;
+  background: url(../img/Carousel/Eurosport.jpg) center/cover;
 }
 .slide3 {
-  background: url(../img/Carousel/Projet3.jpg) center/cover;
+  background: url(../img/Carousel/wss.PNG) center/cover;
 }
 .slide4 {
-  background: url(../img/Carousel/Projet4.jpg) center/cover;
+  background: url(../img/Carousel/Projet3.png) center/cover;
 }
 .slide5 {
-  background: url(../img/Carousel/Projet5.jpg) center/cover;
+  background: url(../img/Carousel/Projet4.png) center/cover;
 }
 .cardhover {
   color: white;
-  background: #000;
+  background: #009ba3c9;
   height: 100%;
   text-align: center;
   opacity: 0;
@@ -110,6 +110,13 @@ nav {
 }
 .cardhovertxt {
   padding-top: 25%;
+}
+.cardhovertxt a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid black;
+  font-family: "Montserrat", "sans-serif";
 }
 .cardhover:hover {
   opacity: 1;

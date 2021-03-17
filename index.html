@@ -74,65 +74,54 @@
                     <div class="swiper-slide slide1">
                         <div class="cardhover">
                             <div class="cardhovertxt">
-                                <p>Titre du projet</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus molestias
-                                    veritatis a
-                                    rerum minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                                    facere.
-                                </p>
-                                <p>Auteur</p>
+                                <p>La montagne</p>
+                                <p>Site de news réalisé en formation en HTML/CSS</p>
+                                <p>Joey Van Stokeren</p>
+                                <a href="https://github.com/jovsn983/La-Montagne">Voir le projet</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide slide2">
                         <div class="cardhover">
                             <div class="cardhovertxt">
-                                <p>Titre du projet</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus molestias
-                                    veritatis a
-                                    rerum minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                                    facere.
+                                <p>Eurosport</p>
+                                <p>Réplique du site Eurosport fait en HTML/CSS
                                 </p>
-                                <p>Auteur</p>
+                                <p>Geoffrey Miard</p>
+                                <a href="">Voir le projet</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide slide3">
                         <div class="cardhover">
                             <div class="cardhovertxt">
-                                <p>Titre du projet</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus molestias
-                                    veritatis a
-                                    rerum minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                                    facere.
+                                <p>West Side Stories</p>
+                                <p>L'histoire du rap de la Côte Ouest américaine. Fait en HTML/CSS
                                 </p>
-                                <p>Auteur</p>
+                                <p>Joey Van Stokeren</p>
+                                <a href="">Voir le projet</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide slide4">
                         <div class="cardhover">
                             <div class="cardhovertxt">
-                                <p>Titre du projet</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus molestias
-                                    veritatis a
-                                    rerum minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                                    facere.
+                                <p>Paradise Island</p>
+                                <p>Maquette d'un site de destinations<br>pour voyager
                                 </p>
-                                <p>Auteur</p>
+                                <p>Lolita Blazquez</p>
+                                <a href="">Voir le projet</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide slide5">
                         <div class="cardhover">
                             <div class="cardhovertxt">
-                                <p>Titre du projet</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus molestias
-                                    veritatis a
-                                    rerum minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                                    facere.
+                                <p>Anais Nails</p>
+                                <p>Maquette d'un site d'une entreprise de pose d'ongles
                                 </p>
-                                <p>Auteur</p>
+                                <p>Lolita Blazquez</p>
+                                <a href="">Voir le projet</a>
                             </div>
                         </div>
                     </div>
@@ -143,9 +132,9 @@
         </div>
         <!-------------------------------------------------Descriptif-------------------------------------------------------------------------------->
         <div class="cartes">
-            <h3>Les différentes formations a l'E-Cod</h3>
+            <h3 data-aos="fade-down">Les différentes formations a l'E-Cod</h3>
             <div class="descriptif">
-                <div class="card" style="width: 18rem;">
+                <div class="card" data-aos="fade-right" style="width: 18rem;">
                     <img src="./static/img/Personnes-formations/WebDev.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h4>Développeur Web</h4>
@@ -157,7 +146,7 @@
                                 type="button" class="btnb">En savoir plus</button></a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" data-aos="fade-left" style="width: 18rem;">
                     <img src="./static/img/Personnes-formations/WebDes.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h4>Web Designer</h4>
@@ -171,7 +160,7 @@
                 </div>
             </div>
             <div class="descriptif2">
-                <div class="card" style="width: 18rem;">
+                <div class="card" data-aos="fade-right" style="width: 18rem;">
                     <img src="./static/img/Personnes-formations/Graphiste.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h4>Graphiste</h4>
@@ -184,7 +173,7 @@
                                 type="button" class="btnb">En savoir plus</button></a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" data-aos="fade-left" style="width: 18rem;">
                     <img src="./static/img/Personnes-formations/CpMarket.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h4>Chef de Projet Web</h4>
@@ -265,6 +254,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./templates/scripts/carousel.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
 </body>
 
 </html>
