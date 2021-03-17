@@ -1,0 +1,332 @@
+/* Header / Navbar */
+.logo {
+  height: 80px;
+  margin-left: 45px;
+}
+.stickyTop {
+  position: sticky;
+  top: 0;
+  left: 0;
+  animation: smoothScroll 1s forwards;
+}
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.navList {
+  color: rgb(62, 179, 185);
+}
+.navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+.fullImg {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.txtindex {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  text-align: center;
+}
+.txtindex h1 {
+  font-size: 2.5rem;
+  font-family: "Montserrat", "sans-serif";
+}
+.txtindex h2 {
+  font-size: 2rem;
+  font-family: "Montserrat", "sans-serif";
+}
+nav {
+ z-index: 100;
+}
+/***********************CAROUSEL*********************/
+.titre2 {
+  position: absolute;
+  top: 7%;
+  color: grey;
+  font-family: "Montserrat", "sans-serif";
+}
+.part2 {
+  background: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  margin: 5% 0 2% 0;
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.slide1 {
+  background: url(../img/Carousel/Projet1.jpg) center/cover;
+}
+.slide2 {
+  background: url(../img/Carousel/Projet2.jpg) center/cover;
+}
+.slide3 {
+  background: url(../img/Carousel/Projet3.jpg) center/cover;
+}
+.slide4 {
+  background: url(../img/Carousel/Projet4.jpg) center/cover;
+}
+.slide5 {
+  background: url(../img/Carousel/Projet5.jpg) center/cover;
+}
+.cardhover {
+  color: white;
+  background: #000;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+}
+.cardhovertxt {
+  padding-top: 25%;
+}
+.cardhover:hover {
+  opacity: 1;
+}
+/***************************BLOC ROLES*********************************/
+.bloc3{
+  height: 100vh;
+}
+.cartes h3 {
+  text-align: center;
+  color: grey;
+  font-family: "Montserrat", "sans-serif";
+  margin-top: 3%;
+}
+.card {
+  background: rgba(255, 255, 255, 0.363) !important;
+  border: none;
+  transition: 0.4s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.descriptif {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+.descriptif2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10%;
+}
+
+/* .descriptif h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.img1 {
+  width: 200px;
+  height: 200px;
+  background: url(../img/Personnes-formations/WebDev.jpg) center/cover;
+  border-radius: 10px 10px 10px 10px;
+  float: left;
+  margin-right: 30px;
+
+}
+.img2 {
+  width: 200px;
+  height: 200px;
+  background: url(../img/Personnes-formations/WebDes.jpg) center/cover;
+  border-radius: 10px 10px 10px 10px;
+  float: right;
+  margin-left: 30px;
+
+
+}
+.img3 {
+  width: 200px;
+  height: 200px;
+  background: url(../img/Personnes-formations/Graphiste.jpg) center/cover;
+  border-radius: 10px 10px 10px 10px;
+  float: left;
+  margin-right: 30px;
+
+}
+.img4 {
+  width: 200px;
+  height: 200px;
+  background: url(../img/Personnes-formations/CpMarket.jpg) center/cover;
+  border-radius: 10px 10px 10px 10px;
+  float: right;
+  margin-left: 30px;
+
+}
+.bloc {
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-bottom: 150px;
+  color: #004f73;
+  font-family: "montserrat", "sans-serif";
+  font-size: 0.8rem;
+}
+.bloc p {
+  margin: 0;
+}
+.bloc h3 {
+  color: #009aa3;
+  font-size: 1rem;
+} */
+.imgf {
+  height: 100px;
+}
+
+.reseaux {
+  width: 25px;
+}
+
+.partVide {
+  display: none;
+}
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+  .fullImg {
+    background-image: url(../img/bg.png);
+  }
+}
+
+/* footer */
+
+footer {
+  background: rgb(0, 80, 116);
+  list-style: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(77, 174, 217);
+}
+.partGauche {
+  border-left: solid 0.5px rgb(77, 174, 217);
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .partContact {
+    border-left: solid 0.5px rgb(77, 174, 217);
+    padding: 20px;
+    margin-top: -50px;
+  }
+  .partVide {
+    display: inline;
+  }
+  .partGauche {
+    border-left: solid 0.5px rgb(77, 174, 217);
+    border-bottom: solid 0.5px rgb(77, 174, 217);
+    margin-bottom: 40px;
+  }
+  .partDroite {
+    border-bottom: solid 0.5px rgb(77, 174, 217);
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partContact {
+    border: unset;
+    padding: 20px;
+    margin-top: -50px;
+  }
+  .partVide {
+    display: inline;
+  }
+  .partGauche {
+    border: unset;
+    padding-left: 10px;
+    margin-bottom: none;
+  }
+  .partDroite {
+    border: unset;
+    margin-bottom: none;
+  }
+  .partContact {
+    margin-left: -10px;
+  }
+}
+
+/* Animations réseaux sociaux */
+#facebook :hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+#twitter :hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+#instagram :hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+#linkedin :hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
