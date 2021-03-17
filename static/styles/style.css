@@ -1,62 +1,56 @@
-body{
-  line-height: 1;
-  list-style-type: none;
+/* Header / Navbar */
+a {
+  text-decoration: none;
 }
-
-/******************NAVBAR*************/
-
 .logo {
-    height: 80px;
-    margin-left: 45px;
+  height: 80px;
+  margin-left: 45px;
 }
-.navbar-nav {
-    margin: 0 auto;
+.stickyTop {
+  position: sticky;
+  top: 0;
+  left: 0;
+  animation: smoothScroll 1s forwards;
 }
-.navbar-nav a {
-    margin: 0px 35px;
-    color: #009AA3 !important;
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
-.btn{
-    background: black;
-    border-radius: 30px;
-    color: white;
-    padding: 7px;
-    margin-left: 250px;
-
+.navList {
+  color: rgb(62, 179, 185);
 }
 .navbar-nav a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
-
-.navbar {
-    color: transparent;
-}
-
-/******************BACKGROUND*************/
 
 .fullImg {
-    overflow: hidden;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(../img/bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
-/******************TEXTE INDEX*************/
 
 .txtindex {
   margin-top: 7%;
+  margin-bottom: 7%;
+  text-align: center;
 }
 .txtindex h1 {
   font-size: 2.5rem;
-  font-family: "montserrat", "sans-serif";
+  font-family: "Montserrat", "sans-serif";
 }
 .txtindex h2 {
   font-size: 2rem;
-  font-family: "montserrat", "sans-serif";
-  
+  font-family: "Montserrat", "sans-serif";
+}
+nav {
+ z-index: 100;
 }
 /***********************CAROUSEL*********************/
 .titre2 {
@@ -82,7 +76,6 @@ text-decoration: underline;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  
 }
 
 .swiper-slide {
@@ -93,23 +86,19 @@ text-decoration: underline;
   overflow: hidden;
 }
 .slide1 {
-  background:url(../img/Carousel/Projet1.jpg) center/cover;
-  
+  background: url(../img/Carousel/Projet1.jpg) center/cover;
 }
 .slide2 {
-  background:url(../img/Carousel/Projet2.jpg) center/cover;
-  
+  background: url(../img/Carousel/Projet2.jpg) center/cover;
 }
 .slide3 {
-  background:url(../img/Carousel/Projet3.jpg) center/cover;
-  
+  background: url(../img/Carousel/Projet3.jpg) center/cover;
 }
 .slide4 {
-  background:url(../img/Carousel/Projet4.jpg) center/cover;
-  
+  background: url(../img/Carousel/Projet4.jpg) center/cover;
 }
 .slide5 {
-  background:url(../img/Carousel/Projet5.jpg) center/cover;
+  background: url(../img/Carousel/Projet5.jpg) center/cover;
 }
 .cardhover {
   color: white;
@@ -122,90 +111,206 @@ text-decoration: underline;
 .cardhovertxt {
   padding-top: 25%;
 }
-.cardhover:hover{
+.cardhover:hover {
   opacity: 1;
 }
 /***************************BLOC ROLES*********************************/
-
-.descriptif h2 {
+.bloc3{
+  height: 100vh;
+}
+.cartes h3 {
   text-align: center;
-  margin-bottom: 5%;
+  color: grey;
+  font-family: "Montserrat", "sans-serif";
+  margin-top: 3%;
 }
-.bloc {
-  margin-left: 100px;
-  margin-right: 150px;
-  margin-bottom: 50px;
-  color: #004F73;
-  font-family: "montserrat", "sans-serif";
-  font-size: 0.8rem;
+.card {
+  background: rgba(255, 255, 255, 0.363) !important;
+  border: none;
+  transition: 0.4s;
 }
-.bloc p {
-  margin: 0;
+.card:hover {
+  transform: scale(1.02);
 }
-.bloc h3 {
-  color: #009AA3;
-  font-size: 1rem;
+.card-body h4{
+    text-align: center;
+    margin: 10px 0 20px 0;
 }
-/*********************FOOTER*********/
-footer {
-  background: #004f73;
+.descriptif {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 350px;
+  justify-content: space-evenly;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+.descriptif2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10%;
+}
+.partVide {
+  display: none;
+}
+/**Buttons**/
+.btnb{
+  display: block;
+  margin: auto;  
+  padding: 10px;
+  margin-top: 40px;
+  background-color: #009AA3;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-family: "Montserrat", "sans-serif";
+  transition: 0.4s;
+}
+.btnb2{
+  margin-top: 57px;
+}
+.btnb:hover {
+ transform: scale(1.1);
+}
+/* footer */
+
+footer {
+  background: rgb(0, 80, 116);
+  list-style: none;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 0.8rem;
+  text-decoration: none;
+  font-size: 12px;
 }
 
+footer a {
+  text-decoration: none;
+  color: rgb(77, 174, 217);
+}
+.partGauche {
+  border-left: solid 0.5px rgb(77, 174, 217);
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .partContact {
+    border-left: solid 0.5px rgb(77, 174, 217);
+    padding: 20px;
+    margin-top: -50px;
+  }
+  .partVide {
+    display: inline;
+  }
+  .partGauche {
+    border-left: solid 0.5px rgb(77, 174, 217);
+    border-bottom: solid 0.5px rgb(77, 174, 217);
+    margin-bottom: 40px;
+  }
+  .partDroite {
+    border-bottom: solid 0.5px rgb(77, 174, 217);
+    margin-bottom: 40px;
+  }
+}
 .imgf {
   height: 100px;
-}
-.mentions {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-.mentions li {
-  padding: 20px;
-  text-decoration: underline;
-  color: white;
 }
 .reseaux {
   width: 25px;
 }
 
-/***********RESPONSIVE**************/
-@media only screen and (max-width: 1000px) {
-  .txtindex h1, .txtindex h2 {
-    font-size: 2rem;
-  }
-  .bloc{
-    line-height: 15px;
-    margin-left: 75px;
-    margin-right: 100px;
-    margin-bottom: 40px;
-  }
-}
 @media only screen and (min-width: 768px) {
   .fullImg {
     background-image: url(../img/bg.png);
   }
 }
-@media only screen and (max-width: 645px) {
-  .txtindex h1, .txtindex h2 {
-    margin-top: 50px;
-    font-size: 1.5rem;
-    text-align: center;
+@media screen and (max-width: 768px) {
+  .partContact {
+    border: unset;
+    padding: 20px;
+    margin-top: -50px;
   }
-  .txtindex {
-    margin: 30px 0;
+  .partVide {
+    display: inline;
   }
-  .bloc{
-    line-height: 30px;
-    line-height: 15px;
-    margin-left: 50px;
-    margin-right: 75px;
+  .partGauche {
+    border: unset;
+    padding-left: 10px;
+    margin-bottom: none;
+  }
+  .partDroite {
+    border: unset;
+    margin-bottom: none;
+  }
+  .partContact {
+    margin-left: -10px;
+  }
+  .descriptif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .descriptif2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
     margin-bottom: 25px;
+  }
+  .foot {
+    margin: 0 auto;
+  }
+}
+
+/* Animations réseaux sociaux */
+#facebook :hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+#twitter :hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+#instagram :hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+#linkedin :hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
